@@ -1,0 +1,53 @@
+Task description
+
+// ################################
+//Task Language: PHP
+//Task Description:
+//Write a function that provides change directory (cd) function for an abstract file system.
+//Notes:
+//root path is '/'.
+//path separator is '/'.
+//parent directory is addressable as '..'.
+//directory names consist only of English alphabet letters 
+//(A-Z and a-z).
+//the function will not be passed any invalid paths.
+//do not use built-in path-related functions.
+// ################################
+
+//For example:
+//$path = new Path('/a/b/c/d');
+// ###################################
+
+// A)
+//$path->cd('x');
+//should display '/a/b/c/d/x'.
+// -------------------------
+
+// B)
+//$path->cd('/a');
+//should display '/a'.
+// -------------------------
+
+// C)
+//$path->cd('./x');
+//should display '/a/b/c/d/x'.
+// -------------------------
+
+// D)
+//$path->cd('../x');
+//should display '/a/b/c/x'.
+// -------------------------
+// E)
+//$path->cd('/d/e/../a');
+//should display '/d/a'.
+// -------------------------
+///########### NOT FINISHED ##############################
+// F) multiple changing of parent directories
+// example input:   /a/b/c/d
+//$path->cd('../../e/../f');
+//should display '/a/b/f'.
+// -------------------------
+// g) 
+//MY ADDITIONAL EXAMPLE OF POSSIBLE SITUATION
+//$path->cd('/d/e/../a/../b');
+//should display '/d/b'.
